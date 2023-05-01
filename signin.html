@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+<script src="form.js"></script> 
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#" id=font_style>CATERING SERVICES</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link active" href="#sectionhome" id=font_style>
+                    Home
+                    <span class="sr-only">(current)</span>
+                </a>
+                <a class="nav-link" href="#sectionabout" id=font_style>About</a>
+                <a class="nav-link" href="#sectioncategory" id=font_style>Category</a>
+                <a class="nav-link" href="#sectionmenu" id=font_style>Menu</a>
+                <a class="nav-link" href="#sectionreviews" id=font_style>Reviews</a>
+                <a class="nav-link" href="#sectioncontact" id=font_style>Contact</a>
+            </div>
+        </div>
+    </nav>
+    <div id="sectionhome">
+        <div class="bgimage">
+            <div class="d-flex flex-column justify-content-center">
+                <h1 class="m-auto pt-1">Quality Food Provider</h1>
+                <p class="m-auto">Good Food, Good Health</p>
+                <br />
+                <button class="buttun bg-info p-1" href="#sectionmenu">Scroll down to Explore</button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionabout">
+        <div class="d-flex flex-row secondpage">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5 p-5">
+                        <h4>ABOUT US</h4>
+                        <h2>We are providing catering services from past 20 years</h2>
+                        <h4>We started this service 20 years ago and still providing best services all over the country and getting best response from customers.</h4>
+                    </div>
+
+                    <div class="col-12 col-md-5">
+                        <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=600" class="secondimage">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectioncategory">
+        <div class="container" style="text-align: center">
+            <h2 class="m-auto CLRS">Our Services</h2>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <h3>INDIAN</h3>
+                    <img src="https://images.pexels.com/photos/2302809/pexels-photo-2302809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="secondimage1">
+                </div>
+                <div class="col-12 col-md-4">
+                    <h3>WESTERN</h3>
+                    <img src="https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="secondimage1">
+                </div>
+                <div class="col-12 col-md-4">
+                    <h3>STARTERS</h3>
+                    <img src="https://images.pexels.com/photos/106343/pexels-photo-106343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="secondimage1">
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+    </div>
+    <div id="sectionmenu">
+        <h2 class="food-menu-heading">Food Menu</h2>
+        <div class="food-menu-container container">
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGZvb2QlMjBkZWxpdmVyeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60=" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Pizza</h2>
+                    <p>
+                        Different taste of pizzas
+                    </p>
+                    <p class="food-price">Price: &#8377; 200</p>
+                </div>
+            </div>
+
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://images.unsplash.com/photo-1528510138849-786a5feddf94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGZvb2QlMjBkZWxpdmVyeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">Bread noodles</h2>
+                    <p>
+                        Offering variety of noodles
+                    </p>
+                    <p class="food-price">Price: &#8377; 150</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://images.unsplash.com/photo-1611309454921-16cef3438ee0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fGZvb2QlMjBkZWxpdmVyeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Burgers</h2>
+                    <p>
+                        We providing delicious burgers.
+                    </p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://images.unsplash.com/photo-1615887087343-6a32f45f27a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGZvb2QlMjBkZWxpdmVyeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Frankies</h2>
+                    <p>
+                        We have different flavour of snacks
+                    </p>
+                    <p class="food-price">Price: &#8377; 150</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://images.unsplash.com/photo-1534939561126-855b8675edd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzV8fGZvb2QlMjBkZWxpdmVyeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Non veg curry</h2>
+                    <p>
+                        We offering non veg / veg curries.
+                    </p>
+                    <p class="food-price">Price: &#8377; 350</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://sukhis.com/app/uploads/2022/04/image3-4.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">South Indian</h2>
+                    <p>
+                        south indian food with full items.
+                    </p>
+                    <p class="food-price">Price: &#8377; 550</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionreviews">
+        <div class="container">
+            <h2>Customer Reviews</h2>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/43/301/97/shruti-haasan-smile-photoshoot-wallpaper-preview.jpg" class="customimg">
+                    <h3>Sruthi Hassan</h3>
+                    <tr>
+                        <td> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </td>
+                        <td> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </td>
+                        <td> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </td>
+                        <td> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </td>
+                        <td> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </td>
+                    </tr>
+                    <p>
+                        Good service and quality food, Immediate service
+                    </p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="https://e1.pxfuel.com/desktop-wallpaper/532/710/desktop-wallpaper-ram-charan-by-invisiblesmilesss-rrr-ram-charan-thumbnail.jpg" class="customimg">
+                    <h3>Ram Charan</h3>
+                    <tr>
+                        <td> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </td>
+                        <td> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </td>
+                        <td> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </td>
+                        <td> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </td>
+                        <td> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </td>
+                    </tr>
+                    <p>
+                        On time delivery and quality and also tasty food indian along with western food.
+                    </p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="https://i.pinimg.com/originals/2a/23/78/2a23781704cdc4e4a126cc33018a0c03.jpg" class="customimg">
+                    <h3>Allu Arjun</h3>
+                    <tr>
+                        <td> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </td>
+                        <td> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </td>
+                        <td> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </td>
+                        <td> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </td>
+                        <td> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </td>
+                    </tr>
+                    <p>
+                        very tastey food, catering service for events
+                    </p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="https://wallpaperaccess.com/full/1279787.jpg" class="customimg">
+                    <h3>Kajol Devgan</h3>
+                    <tr>
+                        <td> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </td>
+                        <td> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </td>
+                        <td> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </td>
+                        <td> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </td>
+                        <td> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </td>
+                    </tr>
+                    <p>
+                        They are providing very traditional food, like home made , excellent service
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div id="sectioncontact">
+        <div class="d-flex flex-row secondpage">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=600" class="secondimage">
+                    </div>
+                    <div class="col-12 col-md-7 p-5">
+                        <div class="formContainer">
+                            <h1>Enter Credentials Here:</h1>
+                            <input type="email" placeholder="email here" id="email"><br>
+                           <br>
+                            <input type="password" placeholder="password here" id="password"><br>
+                            <br>
+                            <button onclick="signUp()" id="signUp">SignUp</button>
+                            <button onclick="signIn()" id="signIp">SignIn</button>
+                            <button onclick="signOut()" id="signOut">SignOut</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="auto">
+            <h3>thank you for choosing us</h3>
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="container">
+                <div class="row">
+                <div class="col-12 col-md-4">
+                    <p>terms and conditions</p>
+                    <p>About us</p>
+          <p>Features</p>
+          <p>News & Blog</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <p>privacy policy</p>
+                    <p>Team</p>
+          <p>plan & Pricing</p>
+          <p>Become a member</p>
+                </div>
+                    <div class="col-12 col-md-4">
+                    <p>FAQ</p>
+                    <p>License</p>
+          <p>Support center</p>
+          <p>Contact us</p>
+                </div>
+            </div> 
+            </div>
+            <br />
+            <br />
+            All rights are reserved © catering services
+            <br>
+            <br>
+            <br>
+        
+        </div>
+       
+    </div>
+
+    
+</body>
+
+</html>
